@@ -1,0 +1,23 @@
+:root{
+    --main-black: #0e0d0e;
+    --cryptid-red: #70002f;
+    --cryptid-blue: #2a0072;
+    --cryptid-purple: #4d0050;
+    --full-red: #ff006b;
+    --full-blue: #5e00ff;
+}
+
+@font-face {
+    font-family: 'baka-too';
+    src: url('./fonts/BakaTooRegular.otf');
+}
+
+@font-face {
+    font-family: 'broadsheet';
+    src: url('./fonts/BroadsheetRegular.ttf');
+}
+
+@font-face {
+    font-family: 'galahad';
+    src: url('./fonts/GalahadRegular.otf');
+}

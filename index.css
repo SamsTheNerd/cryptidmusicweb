@@ -1,0 +1,93 @@
+body{
+    /* background: var(--main-black); */
+    background: center/50% url('./images/DarkerScratched.png') repeat;
+}
+
+::selection{
+    background: var(--cryptid-red);
+    color: var(--white);
+}
+
+#detailCon{
+    width: 50vw;
+    height: 100%;
+    top: 0vw;
+    position: absolute;
+    overflow: noscroll;
+    /* border-right: 0.2vw solid white; */
+    /* background: center/100% url('./images/DarkerScratched.png') repeat; */
+}
+
+#cryptidWordmark{
+    width: 40vw;
+    font-size: 8vw;
+    color: white;
+    text-align: center;
+    left: 5vw;
+    top: 5vw;
+    position: relative;
+    font-family: 'baka-too';
+    transition: filter 0.5s;
+    -webkit-filter: url(#kill);
+    white-space: nowrap;
+    margin-bottom: 10vw;
+}
+
+#cryptidWordmark:hover{
+    /* -webkit-filter: url(#kill); */
+}
+
+#musicBlurb{
+    width: 40vw;
+    left: 5vw;
+    color: white;
+    font-size: 2vw;
+    position: relative;
+    text-align: center;
+    font-family: 'galahad';
+    margin-bottom: 1vw;
+}
+
+#contactContainer{
+    width: 30vw;
+    display: flex;
+    left: 10vw;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.contact{
+    width: 3vw;
+    cursor: pointer;
+    margin: 1vw;
+}
+
+.icon{
+    fill: white;
+    width: 3vw;
+}
+
+.icon:hover{
+    -webkit-filter: url(#kill);
+}
+
+#bioButton{
+    width: 8vw;
+    left: 21vw;
+    position: absolute;
+    background: white;
+    color: var(--main-black);
+    font-family: 'galahad';
+    text-align: center;
+    padding: 0.25vw;
+    padding-top: 0.4vw;
+    font-size: 1.25vw;
+    cursor: pointer;
+    bottom: 3vw;
+}
+
+#bioButton:hover{
+    -webkit-filter: url(#kill);
+}
