@@ -4,18 +4,46 @@ body{
 }
 
 ::selection{
-    background: var(--cryptid-red);
-    color: var(--white);
+    background: var(--full-red);
+    color: var(--white) !important;
+}
+
+#mainContainer{
+    width: 95vw;
+    height: 100vh;
+    display: grid;
+    top: 0vw;
+    left: 0vw;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    grid-template-columns: 50vw 50vw;
 }
 
 #detailCon{
     width: 50vw;
-    height: 100%;
+    /* height: 100%; */
     top: 0vw;
-    position: absolute;
+    position: relative;
     overflow: noscroll;
+    margin-bottom: 2vw;
     /* border-right: 0.2vw solid white; */
     /* background: center/100% url('./images/DarkerScratched.png') repeat; */
+}
+
+#mediaCon{
+    left: -5vw;
+    width: 50vw;
+    /* left: 45vw; */
+    /* height: 100%; */
+    position: relative;
+    top: 0vw;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 #cryptidWordmark{
@@ -24,13 +52,13 @@ body{
     color: white;
     text-align: center;
     left: 5vw;
-    top: 5vw;
+    /* top: 5vw; */
     position: relative;
     font-family: 'baka-too';
     transition: filter 0.5s;
-    -webkit-filter: url(#kill);
+    /* -webkit-filter: url(#kill); */
     white-space: nowrap;
-    margin-bottom: 10vw;
+    margin-bottom: 5vw;
 }
 
 #cryptidWordmark:hover{
@@ -56,6 +84,7 @@ body{
     align-items: center;
     position: relative;
     flex-wrap: wrap;
+    margin-bottom: 8vw;
 }
 
 .contact{
@@ -76,8 +105,8 @@ body{
 #bioButton{
     width: 8vw;
     left: 21vw;
-    position: absolute;
-    background: white;
+    position: relative;
+    background: center/300% url('./images/LightScratched.png') repeat;
     color: var(--main-black);
     font-family: 'galahad';
     text-align: center;
@@ -85,9 +114,200 @@ body{
     padding-top: 0.4vw;
     font-size: 1.25vw;
     cursor: pointer;
-    bottom: 3vw;
+    margin-bottom: 2vw;
 }
 
 #bioButton:hover{
     -webkit-filter: url(#kill);
+}
+
+
+
+#snippetsSection{
+    width: 30vw;
+    height: 10vw;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.snippetNavButton{
+    background: center/300% url('./images/LightScratched.png') repeat;
+    width: 4vw;
+    height: 4vw;
+    position: relative;
+    border-radius: 10vw;
+    cursor: pointer;
+    transition: width 0.25s, height 0.25s;
+}
+
+.snippetNavButton:hover{
+    -webkit-filter: url(#kill);
+}
+
+.snippetNavButton:active{
+    width: 3.5vw;
+    height: 3.5vw;
+}
+
+.sbIcon{
+    width: 4vw;
+    height: 4vw;
+    position: relative;
+    transition: width 0.25s, height 0.25s;
+    fill: var(--main-black);
+}
+
+.snippetNavButton:active .sbIcon{
+    width: 3.5vw;
+    height: 3.5vw;
+}
+
+.sbCon{
+    height: 9vw;
+    width: 4vw;
+    position: relative;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+#snippetViewport{
+    width: 20vw;
+    height: 12vw;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: visible;
+    margin-bottom: 3vw;
+}
+
+#snippetHolder{
+    height: 100%;
+    width: 300%;
+    overflow-y: visible;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    transition: left 0.5s;
+    left: 0;
+}
+
+.snippet{
+    width: 20vw;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items:start;
+    flex-direction: column;
+}
+
+.waveform{
+    margin: auto;
+    width: 20vw;
+    height: auto;
+    left: 0vw;
+    position: relative;
+    margin-bottom: 1vw;
+}
+
+wave{
+    height: 9vw !important;
+}
+
+.snippetTitle{
+    font-size: 1.5vw;
+    font-family: 'galahad';
+    margin:auto;
+}
+
+#snippetNavDots{
+    width: 30vw;
+    height: 2vw;
+    margin-top: 2.5vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.snippetNavDot{
+    width: 1vw;
+    height: 1vw;
+    /* background: white; */
+    border: solid;
+    border-color: white;
+    border-width: 0.1vw;
+    border-radius: 10vw;
+    margin: 0.5vw;
+    cursor: pointer;
+}
+
+.snippetNavDot:hover{
+    -webkit-filter: url(#killSmall);
+}
+
+.snippetNavDot.currentSnippetNavDot{
+    background: white;
+}
+
+#playButtonCon{
+    display: grid;
+    height: 20vw;
+    width: 20vw;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 1vw;
+}
+
+#playButton{
+    /* background: white; */
+    background: center/100% url('./images/LightScratched.png') repeat;
+    position: relative;
+    border-radius: 10vw;
+    width: 15vw;
+    height: 15vw;
+    /* -webkit-filter: url(#killPlay); */
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: width 0.25s, height 0.25s;
+}
+
+#playButton:hover{
+    -webkit-filter: url(#kill);
+}
+
+#playButton:active{
+    width: 14vw;
+    height: 14vw;
+}
+
+#playButton:active .pIcon{
+    width: 8vw;
+    height: 8vw;
+}
+
+
+#pIconContainer{
+    width: 10vw;
+    height: 10vw;
+}
+
+.pIcon{
+    width: 9vw;
+    height: 9vw;
+    fill: var(--main-black);
+    filter: none;
+    transition: width 0.25s, height 0.25s;
+}
+
+#playIcon{
+    margin-left: 1.5vw;
+}
+
+.hidden{
+    display: none;
 }

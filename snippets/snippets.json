@@ -1,0 +1,20 @@
+{
+    "snippetCount": 3,
+    "samples": [
+        {
+            "filename": "testsnippet.m4a",
+            "extension": "x-m4a",
+            "title": "Sample Snippet"
+        },
+        {
+            "filename": "testsnippet2.m4a",
+            "extension": "x-m4a",
+            "title": "Sample Snippet 2"
+        },
+        {
+            "filename": "testsnippet3.m4a",
+            "extension": "x-m4a",
+            "title": "Sample Snippet 3"
+        }
+    ]
+}
